@@ -1,0 +1,235 @@
+$font-normal: 'Open Sans', sans-serif;
+$font-body: Tahoma, Times New Roman;
+$font-stack1: Poppins-Regular;
+$font-stack2: Glyphicons Halflings;
+$white-color: #ffffff; //blue
+$primary-color: #00226c; //blue
+$secondary-color: #f2ac1b; //orange
+$border-bottom: 1px solid #ffffff;
+
+@font-face {
+  font-family: $font-stack1;
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"),
+  	   url("../fonts/Poppins-Regular.woff") format("woff"),
+  	   url("../fonts/Poppins-Regular.ttf") format("truetype"),
+  	   url("../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg"); }
+@font-face {
+  font-family: $font-stack2;
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+  	   url("../fonts/glyphicons-halflings-regular.woff") format("woff"),
+  	   url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"),
+  	   url("../fonts/glyphicons-halflings-regular.svg#glyphicons-halflings-regular") format("svg"); }
+
+// icon
+.ico-pt, .ico-fc, .ico-sw, .ico-hw, .ico-nu, .ico-bi, .ico-cs, .ico-cw, .ico-av, .ico-ab, .ico-th, .ico-tm, .ico-ph, .ico-st, .ico-mind, .ico-body, .ico-soul{
+	float: left;
+	width: 30px;
+	height: 25px;
+	display: block;
+	margin-top: 6px;
+	margin-right: 5px;
+}
+.ico-pt{
+	background: url('../img/ico/pt.png') no-repeat;
+	background-size: cover;
+}
+.ico-fc{
+	background: url('../img/ico/fc.png') no-repeat;
+	background-size: cover;
+}
+.ico-sw{
+	background: url('../img/ico/sw.png') no-repeat;
+	background-size: cover;
+}
+.ico-hw{
+	background: url('../img/ico/hw.png') no-repeat;
+	background-size: cover;
+}
+.ico-bi{
+	background: url('../img/ico/bi.png') no-repeat;
+	background-size: cover;
+}
+.ico-nu{
+	background: url('../img/ico/nu.png') no-repeat;
+	background-size: cover;
+}
+.ico-cw{
+	background: url('../img/ico/cw.png') no-repeat;
+	background-size: cover;
+}
+.ico-tm{
+	background: url('../img/ico/tm.png') no-repeat;
+	background-size: cover;
+}
+.ico-cs{
+	background: url('../img/ico/cs.png') no-repeat;
+	background-size: cover;
+}
+.ico-ph{
+	background: url('../img/ico/ph.png') no-repeat;
+	background-size: cover;
+}
+.ico-th{
+	background: url('../img/ico/th.png') no-repeat;
+	background-size: cover;
+}
+.ico-ab{
+	background: url('../img/ico/ab.png') no-repeat;
+	background-size: cover;
+}
+.ico-av{
+	background: url('../img/ico/av.png') no-repeat;
+	background-size: cover;
+}
+.ico-st{
+	background: url('../img/ico/st.png') no-repeat;
+	background-size: cover;
+}
+.ico-mind{
+	background: url('../img/ico/mind.png') no-repeat;
+	background-size: cover;
+}
+.ico-body{
+	background: url('../img/ico/body.png') no-repeat;
+	background-size: cover;
+}
+.ico-soul{
+	background: url('../img/ico/soul.png') no-repeat;
+	background-size: cover;
+}
+#bgvideo{
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    top: -75px;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: 1;
+}
+header{
+	position: relative;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+	height: 83px;
+	box-sizing: border-box;
+	// border-bottom: 1px solid rgba(255,255,255, .3);
+	
+	nav{
+		ul > li{
+			display: inline-block;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    padding-top: 0;
+		    position: relative;
+		    text-align: center;
+		}
+		ul > li > i{
+			display: inline-block;
+			position: relative;
+		}
+		ul > li > a{
+		    color: rgb(255,255,255) !important;
+		    font-family: $font-stack1;
+		    font-weight: 500;
+		    font-style: normal;
+		    font-size: 13px;
+		    letter-spacing: 0.77px;
+		    line-height: 58px;
+		    text-transform: uppercase;
+		}
+		ul > li > a:hover{
+			margin-bottom: -2px;
+			border-bottom: 2px solid #ffffcc;
+		}
+		ul > li > ul > li > a:hover{
+			margin: 0 0 0 0;
+			border-bottom: none;
+		}
+		ul > li > a.nav-link > i{
+			font-size: 11px !important;
+			font-weight: normal;
+		}
+		ul > li > ul{
+			display: none;
+			margin-top: 2px;
+			margin-left: 3px;
+		}		
+		ul > li:hover > ul{
+			padding: 0;
+			box-sizing: border-box;
+			display: block;
+			position: absolute;
+			width: 200px;
+			background: #fff;
+			transition: 0.3s ease;
+			box-shadow: 0 2px 5px rgba(0,0,0,.5);
+        	-webkit-transform: translateX(-3px);
+       		transform: translateX(-3px);
+       	}
+       	ul > li > ul > li:hover > ul{
+			padding: 0;
+			box-sizing: border-box;
+			display: block;
+			position: absolute;
+			width: 200px;
+			transition: 0.3s ease;
+			box-shadow: 0 2px 5px rgba(0,0,0,.5);
+        	-webkit-transform: translateX(-3px);
+       		transform: translateX(-3px);
+       		margin-top: -30px;
+       		margin-left: 288px;
+       		line-height: 0;
+       		background: rgba(255,255,255,1);
+       	}
+       	ul > li>  ul > li{
+       		width: 100%;
+       		display: block;
+       		text-align: left;
+       		// border: 1px solid #000;
+       	}
+       	ul > li >  ul > li > a{
+       		left: 0;
+       		line-height: 40px;
+       		color: #000 !important;
+       	}
+       	ul > li >  ul > li > a:hover{
+			text-decoration: none;
+       	}
+	}
+	.navbar-nav{
+		box-sizing: border-box;
+		border-bottom: 2px solid rgba(255,255,255, .3);
+	}
+}
+#content-box{
+	position: relative;
+	z-index: 2;
+}
+#ModalFreeTrial{
+	.modal-title{
+		color: #ffffff;
+	}
+	.modal-content{
+		background: rgba(0,0,0, .7)
+	}
+	.modal-footer{
+		border: 0;
+	}
+}
+
+// media queries
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+
+}
