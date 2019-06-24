@@ -1,0 +1,3 @@
+[25-Nov-2018 05:34:43 UTC] PHP Fatal error:  Call to undefined function base_url() in /home2/wbappson/public_html/PROJECTS/evolve5/application/views/templates/default/header.php on line 8
+[25-Nov-2018 05:39:27 UTC] PHP Fatal error:  Call to a member function fetch_list_sched() on null in /home2/wbappson/public_html/PROJECTS/evolve5/application/controllers/Page.php on line 20
+[25-Nov-2018 05:43:45 UTC] PHP Fatal error:  Call to a member function fetch_list_sched() on null in /home2/wbappson/public_html/PROJECTS/evolve5/application/controllers/Page.php on line 20
